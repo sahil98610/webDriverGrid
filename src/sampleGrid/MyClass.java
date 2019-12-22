@@ -13,4 +13,9 @@ public class MyClass {
      System.out.println("sahil");
 
 }
+
+     public void show () {
+    	 
+     System.out.println("sahil");
+}
 }
