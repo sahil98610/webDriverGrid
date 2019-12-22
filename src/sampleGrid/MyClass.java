@@ -23,4 +23,9 @@ public class MyClass {
          System.out.println(" addition");
     }
      
+public void add1 () {
+    	 
+         System.out.println(" addition");
+    }
+     
 }
