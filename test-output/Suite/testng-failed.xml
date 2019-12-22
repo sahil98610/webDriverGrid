@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="ieexplorer"/>
+  <test name="TestFirefox">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="sampleGrid.GridExecWithTestNG"/>
+    </classes>
+  </test> <!-- TestFirefox -->
+  <test name="TestChrome">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="sampleGrid.GridExecWithTestNG"/>
+    </classes>
+  </test> <!-- TestChrome -->
+  <test name="TestInternetExplorer">
+    <parameter name="browser" value="ieexplorer"/>
+    <classes>
+      <class name="sampleGrid.GridExecWithTestNG"/>
+    </classes>
+  </test> <!-- TestInternetExplorer -->
+  <test name="TestFirefox(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="sampleGrid.GridExecWithTestNG">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="testLogin"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- sampleGrid.GridExecWithTestNG -->
+    </classes>
+  </test> <!-- TestFirefox(failed) -->
+  <test name="TestInternetExplorer(failed)">
+    <parameter name="browser" value="ieexplorer"/>
+    <classes>
+      <class name="sampleGrid.GridExecWithTestNG">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="testLogin"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- sampleGrid.GridExecWithTestNG -->
+    </classes>
+  </test> <!-- TestInternetExplorer(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,8 @@
+{
+	"role": "hub",
+	"port": 7777,
+	"capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
+	"throwOnCapabilityNotPresent": true
+	
+	
+}
