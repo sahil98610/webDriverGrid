@@ -18,4 +18,9 @@ public class MyClass {
     	 
      System.out.println("sahil");
 }
+     public void add () {
+    	 
+         System.out.println(" addition");
+    }
+     
 }
